@@ -24,7 +24,6 @@ function my_mouse_move(e) {
         ctx.beginPath();
         ctx.strokeStyle=color;
         ctx.lineWidth=width;
-        ctx.moveTo(last_position_of_x,last_position_of_y);
         ctx.arc(current_position_of_mouse_x,current_position_of_mouse_y,radius,0,2*Math.PI);
         ctx.stroke();
 
@@ -33,8 +32,7 @@ function my_mouse_move(e) {
         console.log("current position of x and y cordinate =");
         console.log("x ="+ current_position_of_mouse_x +"y ="+ current_position_of_mouse_y);
         }
-    last_position_of_x = current_position_of_mouse_x;
-    last_position_of_y = current_position_of_mouse_y;    
+     
 }
  canvas.addEventListener("mouseup",my_mouse_up);
  function my_mouse_up(e) {
